@@ -15,6 +15,7 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
   orderRequest,
   price,
   orderModalData,
+  orderError,
   onOrderClick,
   closeOrderModal
 }) => (
@@ -86,6 +87,12 @@ export const BurgerConstructorUI: FC<BurgerConstructorUIProps> = ({
         onClick={onOrderClick}
       />
     </div>
+
+    {orderError && (
+      <p className='text text_type_main-default text_color_error mt-4 mr-4'>
+        {orderError}
+      </p>
+    )}
 
     {orderRequest && (
       <Modal onClose={closeOrderModal} title={'Оформляем заказ...'}>
