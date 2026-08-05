@@ -11,4 +11,6 @@ export * from './order-card';
 export * from './order-info';
 export * from './order-status';
 export * from './orders-list';
+export * from './order-modal';
 export * from './profile-menu';
+export * from './protected-route';
