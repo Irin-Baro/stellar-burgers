@@ -51,3 +51,5 @@ export const {
   selectIngredientsLoading,
   selectIngredientsError
 } = ingredientsSlice.selectors;
+
+export default ingredientsSlice.reducer;
